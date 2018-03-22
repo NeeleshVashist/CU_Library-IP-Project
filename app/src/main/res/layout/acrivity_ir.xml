@@ -1,98 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bggrey"
-    android:orientation="vertical"
-    android:paddingEnd="15dp"
-    android:paddingStart="15dp"
-    android:paddingTop="10dp">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/myrect"
-        android:elevation="5dp"
-        android:gravity="center"
-        android:padding="10dp"
-        android:text="@string/heading"
-        android:textSize="22sp"
-        android:textStyle="bold" />
+    android:background="@color/bggrey">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/myrect"
-        android:elevation="3dp"
         android:orientation="vertical"
-        android:paddingBottom="5dp"
-        android:paddingEnd="5dp"
-        android:paddingStart="5dp">
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/issue"
-            android:textSize="18sp" />
-
-        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enterCode"
-            android:textSize="18sp" />
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/myrect"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/heading"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-        <Button
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="@string/submit" />
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/colorPrimaryDark">
-    </View>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/myrect"
-        android:elevation="3dp"
-        android:orientation="vertical"
-        android:paddingBottom="5dp"
-        android:paddingEnd="5dp"
-        android:paddingStart="5dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/toreturn"
-            android:textSize="18sp" />
-
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enterCode"
-            android:textSize="18sp" />
+            android:layout_marginTop="10dp"
+            android:background="@drawable/myrect"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp">
 
-        <Button
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/issue"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enterCode"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:text="@string/submit" />
+            android:background="@color/colorPrimaryDark"></View>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/myrect"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:paddingBottom="25dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/toreturn"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enterCode"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/submit" />
+
+        </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

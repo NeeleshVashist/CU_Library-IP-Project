@@ -3,7 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="cardgrey">#F5F5F5</color>
 
     <!-- Background color for app -->
     <color name="tan_background">#FFF7DA</color>
@@ -21,5 +20,5 @@
     <color name="category_phrases">#16AFCA</color>
 
     <!-- Background Color for IR Activity -->
-    <color name="bggrey">#E0E0E0</color>
+    <color name="bggrey">#FAFAFA</color>
 </resources>

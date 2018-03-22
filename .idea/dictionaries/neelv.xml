@@ -2,6 +2,7 @@
   <dictionary name="neelv">
     <words>
       <w>cardgrey</w>
+      <w>sharedpref</w>
     </words>
   </dictionary>
 </component>
