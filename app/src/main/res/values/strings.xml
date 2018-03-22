@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">CU Library</string>
+    <string name="I_R">Issue/Return</string>
+    <string name="BooksInfo">Books Info</string>
+    <string name="StuInfo">Student Info</string>
 </resources>
