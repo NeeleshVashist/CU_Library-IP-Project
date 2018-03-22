@@ -1,6 +1,24 @@
 <resources>
     <string name="app_name">CU Library</string>
+
+    <!--For MainActivity-->
+    <string name="SignIn">Sign In</string>
+    <string name="StuID">Student ID</string>
+    <string name="Password">Password</string>
+
+    <!--For SecondActivity-->
     <string name="I_R">Issue/Return</string>
     <string name="BooksInfo">Books Info</string>
     <string name="StuInfo">Student Info</string>
+
+    <!--For IRActivity-->
+    <string name="heading">Enter Bar-Code Number here</string>
+    <string name="issue">To Issue : </string>
+    <string name="enterCode">Enter Code here</string>
+    <string name="toreturn">To Return : </string>
+    <string name="submit">Submit</string>
+
+    <!--For Students Info-->
+    <string name="name">Name</string>
+    <string name="BooksIss">Books Issued</string>
 </resources>

@@ -4,18 +4,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!--Layout for Issue/Return-->
     <TextView
         android:id="@+id/ir"
         style="@style/CategoryStyle"
         android:background="@color/category_numbers"
         android:text="@string/I_R" />
 
+    <!--Layout for Books Info-->
     <TextView
         android:id="@+id/books"
         style="@style/CategoryStyle"
         android:background="@color/category_family"
         android:text="@string/BooksInfo" />
 
+    <!--Layout for Student Info-->
     <TextView
         android:id="@+id/student"
         style="@style/CategoryStyle"

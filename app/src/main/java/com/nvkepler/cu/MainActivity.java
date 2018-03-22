@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    //Connecting SecondActivity with MainActivity
     public void SignIn(View v) {
         Intent intent=new Intent(this,SecondActivity.class);
         startActivity(intent);

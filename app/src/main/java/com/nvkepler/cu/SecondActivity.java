@@ -5,9 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-/**
- * Created by neha on 22/3/18.
- */
+//Created by neha on 22/3/18.
 
 public class SecondActivity extends MainActivity {
     @Override
@@ -17,8 +15,10 @@ public class SecondActivity extends MainActivity {
 
         //*******************************************************************************************
 
+        //Connecting IRActivity with SecondActivity
+
         // Find the View that shows the IR category
-        TextView ir = (TextView) findViewById(R.id.ir);
+        TextView ir = findViewById(R.id.ir);
 
         // Set a click listener on that View
         ir.setOnClickListener(new View.OnClickListener() {
@@ -35,8 +35,10 @@ public class SecondActivity extends MainActivity {
 
         //*******************************************************************************************
 
+        //Connecting BooksActivity with SecondActivity
+
         // Find the View that shows the Books category
-        TextView book = (TextView) findViewById(R.id.books);
+        TextView book = findViewById(R.id.books);
 
         // Set a click listener on that View
         book.setOnClickListener(new View.OnClickListener() {
@@ -53,8 +55,10 @@ public class SecondActivity extends MainActivity {
 
         //*******************************************************************************************
 
+        //Connecting StudentActivity with SecondActivity
+
         // Find the View that shows the Student Info category
-        TextView stu = (TextView) findViewById(R.id.student);
+        TextView stu = findViewById(R.id.student);
 
         // Set a click listener on that View
         stu.setOnClickListener(new View.OnClickListener() {
