@@ -3,13 +3,14 @@ package com.nvkepler.cu;
 import android.os.Bundle;
 
 /**
- * Created by neelv on 22/3/18.
+ * Created by neha on 22/3/18.
  */
 
-public class BooksActivity extends MainActivity {
+public class SecondActivity extends MainActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_books);
+        setContentView(R.layout.acitivity_second);
+
     }
 }
