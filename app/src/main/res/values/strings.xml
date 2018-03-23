@@ -1,10 +1,15 @@
 <resources>
     <string name="app_name">CU Library</string>
 
-    <!--For MainActivity-->
-    <string name="SignIn">Sign In</string>
-    <string name="StuID">Student ID</string>
+    <!--For ActivityAnother-->
+    <string name="Username">Username</string>
+    <string name="Institute">Institute</string>
     <string name="Password">Password</string>
+    <string name="CUIET">CUIET</string>
+    <string name="session">Session</string>
+    <string name="Year">2017_2018</string>
+    <string name="LogIn">Log In</string>
+    <string name="FgtPwd">Forget Password</string>
 
     <!--For SecondActivity-->
     <string name="I_R">Issue/Return</string>
@@ -21,4 +26,5 @@
     <!--For Students Info-->
     <string name="name">Name</string>
     <string name="BooksIss">Books Issued</string>
+    <string name="StuID">Student ID</string>
 </resources>

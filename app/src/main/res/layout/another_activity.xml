@@ -15,6 +15,7 @@
             android:layout_width="260dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
             android:src="@drawable/chitkara_logo" />
 
         <LinearLayout
@@ -30,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:paddingBottom="7dp"
-                android:text="Log In"
+                android:text="@string/LogIn"
                 android:textColor="#d60b0b"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -46,13 +47,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
-                    android:text="Username" />
+                    android:text="@string/Username" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#ffffff"
-                    android:hint="Username"
+                    android:hint="@string/Username"
                     android:inputType="number"
                     android:padding="4dp" />
 
@@ -61,13 +62,13 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:paddingTop="15dp"
-                    android:text="Password" />
+                    android:text="@string/Password" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#ffffff"
-                    android:hint="Password"
+                    android:hint="@string/Password"
                     android:inputType="textPassword"
                     android:padding="4dp" />
 
@@ -76,13 +77,13 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:paddingTop="15dp"
-                    android:text="Institute" />
+                    android:text="@string/Institute" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#ffffff"
-                    android:hint="CUIET"
+                    android:hint="@string/CUIET"
                     android:padding="4dp" />
 
                 <TextView
@@ -90,21 +91,23 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:paddingTop="15dp"
-                    android:text="Session" />
+                    android:text="@string/session" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#ffffff"
-                    android:hint="2017-2018"
+                    android:hint="@string/Year"
                     android:padding="4dp" />
 
                 <Button
+                    android:id="@+id/next"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:background="#d60b0b"
-                    android:text="Log In"
+                    android:onClick="SignIn"
+                    android:text="@string/LogIn"
                     android:textColor="#ffffff"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -113,7 +116,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="7dp"
-                    android:text="Forget Password"
+                    android:text="@string/FgtPwd"
                     android:textColor="#d60b0b" />
             </LinearLayout>
 

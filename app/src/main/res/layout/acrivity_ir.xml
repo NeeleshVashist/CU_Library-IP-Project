@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/bggrey">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:paddingBottom="20dp"
         android:paddingEnd="15dp"
         android:paddingStart="15dp"
         android:paddingTop="10dp">
@@ -71,7 +72,7 @@
             android:background="@drawable/myrect"
             android:elevation="3dp"
             android:orientation="vertical"
-            android:paddingBottom="25dp"
+            android:paddingBottom="20dp"
             android:paddingEnd="5dp"
             android:paddingStart="5dp">
 
