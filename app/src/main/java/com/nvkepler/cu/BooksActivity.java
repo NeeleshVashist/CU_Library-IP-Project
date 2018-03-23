@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 //Created by neelv on 22/3/18.
 
-public class BooksActivity extends MainActivity {
+public class BooksActivity extends SecondActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

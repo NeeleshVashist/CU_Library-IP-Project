@@ -3,6 +3,7 @@
     <color name="colorPrimary">#d60b0b</color>
     <color name="colorPrimaryDark">#a90000</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
 
     <!-- Background color for app -->
     <color name="tan_background">#FFF7DA</color>
@@ -21,4 +22,10 @@
 
     <!-- Background Color for IR Activity -->
     <color name="bggrey">#FAFAFA</color>
+
+    <!-- Black BG Color -->
+    <color name="bgblack">#1b1b1b</color>
+
+    <!-- Grey for BG -->
+    <color name="maingrey">#EAEDED</color>
 </resources>

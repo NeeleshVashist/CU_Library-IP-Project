@@ -19,7 +19,7 @@ public class ActivityAnother extends AppCompatActivity {
 
     //Connecting SecondActivity with ActivityAnother
     public void SignIn(View v) {
-        if (v.getId() == R.id.next) {
+        if (v.getId() == R.id.signin) {
             Intent intent = new Intent(this, SecondActivity.class);
             startActivity(intent);
         }

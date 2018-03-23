@@ -8,7 +8,7 @@
     <string name="CUIET">CUIET</string>
     <string name="session">Session</string>
     <string name="Year">2017_2018</string>
-    <string name="LogIn">Log In</string>
+    <string name="LogIn">Sign In</string>
     <string name="FgtPwd">Forget Password</string>
 
     <!--For SecondActivity-->
@@ -27,4 +27,7 @@
     <string name="name">Name</string>
     <string name="BooksIss">Books Issued</string>
     <string name="StuID">Student ID</string>
+
+    <!--Content Description-->
+    <string name="description">Chitkara Logo</string>
 </resources>

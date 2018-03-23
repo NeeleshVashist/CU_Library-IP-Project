@@ -1,125 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1b1b1b">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <LinearLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="30dp"
+        android:text="@string/LogIn"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dp"
+        android:text="@string/StuID"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#1b1b1b"
-        android:orientation="vertical"
-        android:paddingTop="10dp">
+        android:hint="@string/StuID"
+        android:textSize="18sp" />
 
-        <ImageView
-            android:layout_width="260dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/chitkara_logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dp"
+        android:paddingTop="20dp"
+        android:text="@string/Password"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:background="#ffffff"
-            android:orientation="vertical"
-            android:padding="12dp">
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Password"
+        android:textSize="18sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingBottom="7dp"
-                android:text="@string/LogIn"
-                android:textColor="#d60b0b"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#EAEDED"
-                android:orientation="vertical"
-                android:padding="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="10dp"
-                    android:text="@string/Username" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#ffffff"
-                    android:hint="@string/Username"
-                    android:inputType="number"
-                    android:padding="4dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="10dp"
-                    android:paddingTop="15dp"
-                    android:text="@string/Password" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#ffffff"
-                    android:hint="@string/Password"
-                    android:inputType="textPassword"
-                    android:padding="4dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="10dp"
-                    android:paddingTop="15dp"
-                    android:text="@string/Institute" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#ffffff"
-                    android:hint="@string/CUIET"
-                    android:padding="4dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="10dp"
-                    android:paddingTop="15dp"
-                    android:text="@string/session" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#ffffff"
-                    android:hint="@string/Year"
-                    android:padding="4dp" />
-
-                <Button
-                    android:id="@+id/next"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:background="#d60b0b"
-                    android:onClick="SignIn"
-                    android:text="@string/LogIn"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="7dp"
-                    android:text="@string/FgtPwd"
-                    android:textColor="#d60b0b" />
-            </LinearLayout>
-
-        </LinearLayout>
-    </LinearLayout>
-</ScrollView>
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:onClick="SignIn"
+        android:text="@string/LogIn" />
+</LinearLayout>
