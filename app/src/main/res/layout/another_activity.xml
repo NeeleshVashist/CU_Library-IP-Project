@@ -90,6 +90,7 @@
                         android:layout_height="wrap_content"
                         android:background="@color/white"
                         android:hint="@string/CUIET"
+                        android:inputType="text"
                         android:padding="4dp"
                         android:textSize="16sp" />
 
@@ -107,6 +108,7 @@
                         android:layout_height="wrap_content"
                         android:background="@color/white"
                         android:hint="@string/Year"
+                        android:inputType="datetime"
                         android:padding="4dp"
                         android:textSize="16sp" />
 

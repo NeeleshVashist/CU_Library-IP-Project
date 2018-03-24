@@ -6,42 +6,23 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/cu_logo" />
+
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/greyrect"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="20dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/myrect"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/eLibrary"
-                android:textColor="@color/bgblack"
-                android:textSize="45sp" />
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginBottom="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/greyrect"
-                android:contentDescription="@string/description"
-                android:src="@drawable/splashlogo" />
-
-        </LinearLayout>
-
-    </LinearLayout>
+        android:layout_marginTop="35dp"
+        android:background="@color/buttonred"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="8dp"
+        android:text="@string/e_library"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
