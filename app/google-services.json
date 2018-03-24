@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "226585463615",
+    "firebase_url": "https://cu-library-606de.firebaseio.com",
+    "project_id": "cu-library-606de",
+    "storage_bucket": "cu-library-606de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226585463615:android:167b788a98cf7c9f",
+        "android_client_info": {
+          "package_name": "com.nvkepler.cu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226585463615-1lopqim3llfs2vhfo77cnu91p0o9cq6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nvkepler.cu",
+            "certificate_hash": "7358698bf6179c9b464950ddc89a8b3e986a8881"
+          }
+        },
+        {
+          "client_id": "226585463615-a438scmtjiskebtu0ff2b26gdpi7lgp1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClWEu1emmTmK3jkfub1qbrV0jjmv7AazE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226585463615-a438scmtjiskebtu0ff2b26gdpi7lgp1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
