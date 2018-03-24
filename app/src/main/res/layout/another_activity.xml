@@ -36,7 +36,7 @@
                     android:layout_gravity="center"
                     android:paddingBottom="7dp"
                     android:text="@string/LogIn"
-                    android:textColor="#d60b0b"
+                    android:textColor="@color/buttonred"
                     android:textSize="26sp"
                     android:textStyle="bold" />
 
@@ -121,7 +121,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:background="@color/buttonred"
+                        android:background="@drawable/bottonbg"
                         android:onClick="SignIn"
                         android:text="@string/LogIn"
                         android:textColor="@color/white"

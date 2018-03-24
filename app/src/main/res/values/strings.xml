@@ -10,7 +10,7 @@
     <string name="Year">2017_2018</string>
     <string name="LogIn">Sign In</string>
     <string name="FgtPwd">Forget Password</string>
-
+    ri
     <!--For SecondActivity-->
     <string name="I_R">Issue/Return</string>
     <string name="BooksInfo">Books Info</string>
@@ -19,6 +19,7 @@
     <!--For IRActivity-->
     <string name="heading">Enter Bar-Code Number here</string>
     <string name="issue">To Issue : </string>
+    <string name="eLibrary">eLibrary</string>
     <string name="enterCode">Enter Code here</string>
     <string name="toreturn">To Return : </string>
     <string name="submit">Submit</string>

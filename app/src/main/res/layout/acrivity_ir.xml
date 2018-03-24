@@ -1,107 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:background="@color/bgblack">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="20dp"
-        android:paddingEnd="15dp"
-        android:paddingStart="15dp"
-        android:paddingTop="10dp">
+        android:background="@color/bgblack">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/myrect"
-            android:elevation="5dp"
+            android:background="@color/bgblack"
             android:gravity="center"
-            android:padding="10dp"
-            android:text="@string/heading"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/myrect"
-            android:elevation="3dp"
-            android:orientation="vertical"
-            android:paddingBottom="5dp"
-            android:paddingEnd="5dp"
-            android:paddingStart="5dp">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/issue"
-                android:textSize="18sp" />
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
-            <EditText
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/eLibrary"
+                    android:textColor="@color/white"
+                    android:textSize="45sp" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/splashlogo" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enterCode"
-                android:textSize="18sp" />
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/myrect"
+                android:orientation="vertical"
+                android:padding="10dp">
 
-            <Button
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:text="@string/submit" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/myrect"
+                    android:gravity="center"
+                    android:text="@string/heading"
+                    android:textColor="@color/buttonred"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/greyrect"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="@string/issue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="@string/enterCode"
+                        android:padding="4dp"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/bottonbg"
+                        android:text="@string/submit"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/colorPrimaryDark"></View>
+    </ScrollView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/myrect"
-            android:elevation="3dp"
-            android:orientation="vertical"
-            android:paddingBottom="20dp"
-            android:paddingEnd="5dp"
-            android:paddingStart="5dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/toreturn"
-                android:textSize="18sp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/enterCode"
-                android:textSize="18sp" />
-
-            <Button
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:text="@string/submit" />
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="10dp"></View>
-    </LinearLayout>
-
-</ScrollView>
+</RelativeLayout>
