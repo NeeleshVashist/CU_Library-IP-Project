@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#d60b0b</color>
-    <color name="colorPrimaryDark">#a90000</color>
+    <color name="colorPrimaryDark">#bf0000</color>
     <color name="colorAccent">#FF4081</color>
     <color name="white">#ffffff</color>
 
@@ -28,4 +28,7 @@
 
     <!-- Grey for BG -->
     <color name="maingrey">#EAEDED</color>
+
+    <!-- Red for Button -->
+    <color name="buttonred">#d60b0b</color>
 </resources>

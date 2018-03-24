@@ -17,13 +17,9 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".ActivityAnother"
-            android:label="@string/LogIn" />
+        <activity android:name=".ActivityAnother" />
 
-        <activity
-            android:name=".SecondActivity"
-            android:label="Options" />
+        <activity android:name=".SecondActivity" />
 
         <activity
             android:name=".IRActivity"
