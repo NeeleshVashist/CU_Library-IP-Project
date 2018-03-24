@@ -24,7 +24,7 @@
                 android:layout_width="110dp"
                 android:layout_height="110dp"
                 android:contentDescription="@string/description"
-                android:src="@mipmap/splash" />
+                android:src="@drawable/splashlogo" />
 
             <TextView
                 android:layout_width="wrap_content"
