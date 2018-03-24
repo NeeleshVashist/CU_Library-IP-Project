@@ -9,16 +9,16 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/maingrey"
-        android:padding="25dp">
+        android:background="@drawable/greyrect"
+        android:padding="34dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:background="@drawable/myrect"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="25dp">
+            android:padding="35dp">
 
             <ImageView
                 android:layout_width="110dp"

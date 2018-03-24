@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="15dp"
-                android:background="@color/white"
+                android:background="@drawable/myrect"
                 android:orientation="vertical"
                 android:padding="10dp">
 
@@ -37,7 +37,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/maingrey"
+                    android:background="@drawable/greyrect"
                     android:orientation="vertical"
                     android:padding="12dp">
 
