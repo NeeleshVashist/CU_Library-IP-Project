@@ -25,6 +25,10 @@
     <string name="toreturn">To Return : </string>
     <string name="submit">Submit</string>
 
+    <!--For IRActivity-->
+    <string name="bookName">Book Name</string>
+    <string name="authorName">Author Name</string>
+
     <!--For Students Info-->
     <string name="name">Name</string>
     <string name="BooksIss">Books Issued</string>
