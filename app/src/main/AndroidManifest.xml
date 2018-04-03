@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,20 +18,20 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ActivityAnother" />
+        <activity android:name=".SignInActivity" />
 
-        <activity android:name=".SecondActivity" />
+        <activity android:name=".FragmentsSignInActivity" />
 
         <activity
-            android:name=".IRActivity"
+            android:name=".IssueSignInActivity"
             android:label="Issue-Return" />
 
         <activity
-            android:name=".BooksActivity"
+            android:name=".BooksSignInActivity"
             android:label="Books" />
 
         <activity
-            android:name=".StudentActivity"
+            android:name=".StudentInfoActivity"
             android:label="Student ID" />
     </application>
 

@@ -8,19 +8,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
-public class ActivityAnother extends AppCompatActivity {
+public class SignInActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.another_activity);
-        Log.d("Open", "ActivityAnother is opened");
+        setContentView(R.layout.signin_activity);
     }
 
-    //Connecting SecondActivity with ActivityAnother
+    //Connecting FragmentsSignInActivity with SignInActivity
     public void SignIn(View v) {
         if (v.getId() == R.id.signin) {
-            Intent intent = new Intent(this, SecondActivity.class);
+            Intent intent = new Intent(this, FragmentsSignInActivity.class);
             startActivity(intent);
         }
     }

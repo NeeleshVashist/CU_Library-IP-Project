@@ -7,11 +7,11 @@ import java.util.ArrayList;
 
 //Created by neelv on 22/3/18.
 
-public class BooksActivity extends SecondActivity {
+public class BooksSignInActivity extends FragmentsSignInActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_books);
+        setContentView(R.layout.books_activity);
 
         // Create a list of books
         ArrayList<Book> books = new ArrayList<>();
