@@ -11,9 +11,9 @@
     <string name="Year">2017–2018</string>
     <string name="LogIn">Sign In</string>
     <string name="FgtPwd">Forget Password</string>
-    ri
+
     <!--For SecondActivity-->
-    <string name="I_R">Issue/Return</string>
+    <string name="I_R">Issue Portal</string>
     <string name="BooksInfo">Books Info</string>
     <string name="StuInfo">Student Info</string>
 

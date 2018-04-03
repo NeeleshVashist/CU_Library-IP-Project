@@ -24,15 +24,15 @@
 
         <activity
             android:name=".IssueSignInActivity"
-            android:label="Issue-Return" />
+            android:label="@string/I_R" />
 
         <activity
             android:name=".BooksSignInActivity"
-            android:label="Books" />
+            android:label="@string/BooksInfo" />
 
         <activity
             android:name=".StudentInfoActivity"
-            android:label="Student ID" />
+            android:label="@string/StuInfo" />
     </application>
 
 </manifest>
