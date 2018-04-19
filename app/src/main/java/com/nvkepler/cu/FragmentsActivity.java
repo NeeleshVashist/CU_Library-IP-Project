@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 //Created by neha on 22/3/18.
 
-public class FragmentsSignInActivity extends SignInActivity {
+public class FragmentsActivity extends SignInActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,7 +15,7 @@ public class FragmentsSignInActivity extends SignInActivity {
 
         //*******************************************************************************************
 
-        //Connecting IssueSignInActivity with FragmentsSignInActivity
+        //Connecting IssueActivity with FragmentsActivity
 
         // Find the View that shows the IR category
         TextView ir = findViewById(R.id.ir);
@@ -25,8 +25,8 @@ public class FragmentsSignInActivity extends SignInActivity {
             // The code in this method will be executed when the IR category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link IssueSignInActivity}
-                Intent IRIntent = new Intent(FragmentsSignInActivity.this, IssueSignInActivity.class);
+                // Create a new intent to open the {@link IssueActivity}
+                Intent IRIntent = new Intent(FragmentsActivity.this, IssueActivity.class);
 
                 // Start the new activity
                 startActivity(IRIntent);
@@ -35,7 +35,7 @@ public class FragmentsSignInActivity extends SignInActivity {
 
         //*******************************************************************************************
 
-        //Connecting BooksSignInActivity with FragmentsSignInActivity
+        //Connecting BooksActivity with FragmentsActivity
 
         // Find the View that shows the Books category
         TextView book = findViewById(R.id.books);
@@ -45,8 +45,8 @@ public class FragmentsSignInActivity extends SignInActivity {
             // The code in this method will be executed when the IR category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link BooksSignInActivity}
-                Intent BooksIntent = new Intent(FragmentsSignInActivity.this, BooksSignInActivity.class);
+                // Create a new intent to open the {@link BooksActivity}
+                Intent BooksIntent = new Intent(FragmentsActivity.this, BooksActivity.class);
 
                 // Start the new activity
                 startActivity(BooksIntent);
@@ -55,7 +55,7 @@ public class FragmentsSignInActivity extends SignInActivity {
 
         //*******************************************************************************************
 
-        //Connecting StudentInfoActivity with FragmentsSignInActivity
+        //Connecting StudentInfoActivity with FragmentsActivity
 
         // Find the View that shows the Student Info category
         TextView stu = findViewById(R.id.student);
@@ -66,7 +66,7 @@ public class FragmentsSignInActivity extends SignInActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link StudentInfoActivity}
-                Intent StuIntent = new Intent(FragmentsSignInActivity.this, StudentInfoActivity.class);
+                Intent StuIntent = new Intent(FragmentsActivity.this, StudentInfoActivity.class);
 
                 // Start the new activity
                 startActivity(StuIntent);

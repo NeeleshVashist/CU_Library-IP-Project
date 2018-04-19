@@ -17,7 +17,7 @@
     <string name="BooksInfo">Books Info</string>
     <string name="StuInfo">Student Info</string>
 
-    <!--For IssueSignInActivity-->
+    <!--For IssueActivity-->
     <string name="heading">Enter Bar-Code Number here</string>
     <string name="issue">To Issue : </string>
     <string name="eLibrary">eLibrary</string>
@@ -25,7 +25,7 @@
     <string name="toreturn">To Return : </string>
     <string name="submit">Submit</string>
 
-    <!--For IssueSignInActivity-->
+    <!--For IssueActivity-->
     <string name="bookName">Book Name</string>
     <string name="authorName">Author Name</string>
 

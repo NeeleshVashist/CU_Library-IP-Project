@@ -1,16 +1,14 @@
 package com.nvkepler.cu;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
-import android.view.View;
 
 //Created by neelv on 22/3/18.
 
 
-public class IssueSignInActivity extends FragmentsSignInActivity {
+public class IssueActivity extends FragmentsActivity {
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;

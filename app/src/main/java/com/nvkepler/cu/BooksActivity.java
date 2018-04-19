@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 //Created by neelv on 22/3/18.
 
-public class BooksSignInActivity extends FragmentsSignInActivity {
+public class BooksActivity extends FragmentsActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
