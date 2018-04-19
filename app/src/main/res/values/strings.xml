@@ -38,4 +38,8 @@
     <string name="description">Chitkara Logo</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="myaccount">My Account</string>
+    <string name="booksinfo">Books Info</string>
+    <string name="studentinfo">Student Info</string>
+    <string name="settings">Settings</string>
 </resources>

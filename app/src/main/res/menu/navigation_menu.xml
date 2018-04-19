@@ -6,6 +6,7 @@
         android:title="My Account" />
     <item
         android:id="@+id/nav_BookInfo"
+        android:icon="@mipmap/ic_library_books_black_24dp"
         android:title="Books Info" />
     <item
         android:id="@+id/nav_studentInfo"

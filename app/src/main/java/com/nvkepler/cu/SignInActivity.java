@@ -19,7 +19,7 @@ public class SignInActivity extends AppCompatActivity {
     //Connecting FragmentsSignInActivity with SignInActivity
     public void SignIn(View v) {
         if (v.getId() == R.id.signin) {
-            Intent intent = new Intent(this, FragmentsSignInActivity.class);
+            Intent intent = new Intent(this, IssueSignInActivity.class);
             startActivity(intent);
         }
     }
