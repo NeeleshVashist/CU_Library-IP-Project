@@ -2,20 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_book"
-        android:icon="@mipmap/ic_library_books_black_24dp"
-        android:title="Issue Books" />
+        android:icon="@drawable/ic_code_black_24dp"
+        android:title="@string/I_R" />
     <item
         android:id="@+id/nav_BookInfo"
-        android:icon="@mipmap/ic_collections_bookmark_black_24dp"
-        android:title="Books Info" />
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="@string/booksinfo" />
     <item
         android:id="@+id/nav_studentInfo"
-        android:icon="@mipmap/ic_person_black_24dp"
-        android:title="Student Info" />
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/studentinfo" />
 
     <item
         android:id="@+id/nav_logout"
-        android:icon="@mipmap/logout_icon"
-        android:title="Sign Out" />
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="@string/signout" />
 
 </menu>
