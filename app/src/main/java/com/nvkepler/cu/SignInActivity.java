@@ -5,7 +5,6 @@ package com.nvkepler.cu;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 
 public class SignInActivity extends AppCompatActivity {
@@ -16,10 +15,10 @@ public class SignInActivity extends AppCompatActivity {
         setContentView(R.layout.signin_activity);
     }
 
-    //Connecting FragmentsSignInActivity with SignInActivity
+    //Connecting FragmentsActivity with SignInActivity
     public void SignIn(View v) {
         if (v.getId() == R.id.signin) {
-            Intent intent = new Intent(this, FragmentsSignInActivity.class);
+            Intent intent = new Intent(this, FragmentsActivity.class);
             startActivity(intent);
         }
     }
