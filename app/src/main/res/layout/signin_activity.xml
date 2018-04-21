@@ -85,18 +85,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/bottonbg"
-                        android:onClick="SignIn"
                         android:text="@string/LogIn"
                         android:textColor="@color/white"
                         android:textSize="16sp"
                         android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="7dp"
-                        android:text="@string/FgtPwd"
-                        android:textColor="@color/buttonred" />
                 </LinearLayout>
 
             </LinearLayout>

@@ -4,10 +4,11 @@ package com.nvkepler.cu;
 
 public class Book {
 
-    /**
-     * Book Name
-     */
+    private static final int NO_IMAGE_PROVIDED = -1;
+
     private String mbookName;
+
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
 
     /**
      * Author Name
@@ -25,6 +26,13 @@ public class Book {
         mauthorName = authorName;
     }
 
+    public Book(String bookName, String authorName, int imageResourceId) {
+        mbookName = bookName;
+        mauthorName = authorName;
+        mImageResourceId = imageResourceId;
+    }
+
+
     /**
      * Get the Book Name
      */
@@ -37,6 +45,17 @@ public class Book {
      */
     public String getAuthorName() {
         return mauthorName;
+    }
+
+    public int getImageResourceId() {
+        return mImageResourceId;
+    }
+
+    /**
+     * Returns whether or not there is an image for this word.
+     */
+    public boolean hasImage() {
+        return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
 }

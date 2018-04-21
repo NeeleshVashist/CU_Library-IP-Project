@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -31,14 +32,28 @@ public class BookAdapter extends ArrayAdapter<Book> {
         // Get the {@link Book} object located at this position in the list
         Book currentBook = getItem(position);
 
-        TextView miwokTextView = listItemView.findViewById(R.id.books_name);
+        TextView booksName = listItemView.findViewById(R.id.book_text_view);
 
         assert currentBook != null;
-        miwokTextView.setText(currentBook.getBookName());
+        booksName.setText(currentBook.getBookName());
 
-        TextView defaultTextView = listItemView.findViewById(R.id.author_name);
+        TextView authorName = listItemView.findViewById(R.id.author_text_view);
 
-        defaultTextView.setText(currentBook.getAuthorName());
+        authorName.setText(currentBook.getAuthorName());
+
+
+        // Find the ImageView in the list_item.xml layout with the ID image.
+        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+        // Check if an image is provided for this word or not
+        if (currentBook.hasImage()) {
+            // If an image is available, display the provided image based on the resource ID
+            imageView.setImageResource(currentBook.getImageResourceId());
+            // Make sure the view is visible
+            imageView.setVisibility(View.VISIBLE);
+        } else {
+            // Otherwise hide the ImageView (set visibility to GONE)
+            imageView.setVisibility(View.GONE);
+        }
 
         return listItemView;
     }
