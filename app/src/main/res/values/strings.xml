@@ -3,7 +3,7 @@
     <string name="e_library">eLibrary</string>
 
     <!--For SignInActivity-->
-    <string name="Username">Username</string>
+    <string name="Username">Email</string>
     <string name="Institute">Institute</string>
     <string name="Password">Password</string>
     <string name="CUIET">CUIET</string>
@@ -36,4 +36,6 @@
 
     <!--Content Description-->
     <string name="description">Chitkara Logo</string>
+
+    <string name="loading">Loading</string>
 </resources>

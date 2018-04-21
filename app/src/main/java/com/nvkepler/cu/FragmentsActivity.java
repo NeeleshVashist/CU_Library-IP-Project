@@ -2,12 +2,13 @@ package com.nvkepler.cu;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
 //Created by neha on 22/3/18.
 
-public class FragmentsActivity extends SignInActivity {
+public class FragmentsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -50,11 +50,12 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:id="@+id/emailField"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
                         android:hint="@string/Username"
-                        android:inputType="number"
+                        android:inputType="textEmailAddress"
                         android:padding="4dp"
                         android:textSize="16sp" />
 
@@ -68,6 +69,7 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:id="@+id/passwordField"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
@@ -76,60 +78,17 @@
                         android:padding="4dp"
                         android:textSize="16sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingBottom="5dp"
-                        android:paddingTop="15dp"
-                        android:text="@string/Institute"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/white"
-                        android:hint="@string/CUIET"
-                        android:inputType="text"
-                        android:padding="4dp"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingBottom="5dp"
-                        android:paddingTop="15dp"
-                        android:text="@string/session"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/white"
-                        android:hint="@string/Year"
-                        android:inputType="datetime"
-                        android:padding="4dp"
-                        android:textSize="16sp" />
 
                     <Button
-                        android:id="@+id/signin"
+                        android:id="@+id/loginBtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/bottonbg"
-                        android:onClick="SignIn"
                         android:text="@string/LogIn"
                         android:textColor="@color/white"
                         android:textSize="16sp"
                         android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="7dp"
-                        android:text="@string/FgtPwd"
-                        android:textColor="@color/buttonred" />
                 </LinearLayout>
 
             </LinearLayout>
