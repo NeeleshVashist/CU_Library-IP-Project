@@ -36,4 +36,6 @@
 
     <!--Content Description-->
     <string name="description">Chitkara Logo</string>
+
+    <string name="loading">Loading</string>
 </resources>

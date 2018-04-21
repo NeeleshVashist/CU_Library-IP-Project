@@ -22,6 +22,8 @@
 
         <activity android:name=".SignInActivity" />
 
+        <activity android:name=".BaseActivity" />
+
         <activity android:name=".FragmentsActivity" />
 
         <activity

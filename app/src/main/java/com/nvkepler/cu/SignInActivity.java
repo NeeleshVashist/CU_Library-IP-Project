@@ -5,9 +5,8 @@ package com.nvkepler.cu;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,86 +16,112 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
-public class SignInActivity extends AppCompatActivity {
+public class SignInActivity extends BaseActivity implements View.OnClickListener {
+
+    private static final String TAG = "EmailPassword";
 
     private EditText mEmailField;
     private EditText mPasswordField;
 
-    private Button mLoginBtn;
-
+    // [START declare_auth]
     private FirebaseAuth mAuth;
-
-    private FirebaseAuth.AuthStateListener mAuthListener;
+    // [END declare_auth]
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signin_activity);
 
+        // Views
+        mEmailField = findViewById(R.id.emailField);
+        mPasswordField = findViewById(R.id.passwordField);
+
+        // Buttons
+        findViewById(R.id.loginBtn).setOnClickListener(this);
+
+        // [START initialize_auth]
         mAuth = FirebaseAuth.getInstance();
+        // [END initialize_auth]
+    }
 
-        mEmailField = (EditText) findViewById(R.id.emailField);
-        mPasswordField = (EditText) findViewById(R.id.passwordField);
+    // [START on_start_check_user]
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
 
-        mLoginBtn = (Button) findViewById(R.id.loginBtn);
+    }
+    // [END on_start_check_user]
 
-        mAuthListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+    private void signIn(String email, String password) {
+        Log.d(TAG, "signIn:" + email);
+        if (!validateForm()) {
+            return;
+        }
 
-                if (firebaseAuth.getCurrentUser() != null) {
+        showProgressDialog();
 
-                    startActivity(new Intent(SignInActivity.this, FragmentActivity.class));
+        // [START sign_in_with_email]
+        mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            // Sign in success, update UI with the signed-in user's information
+                            Log.d("success", "signInWithEmail:success");
+                            Toast.makeText(SignInActivity.this, "Authentication successful.",
+                                    Toast.LENGTH_SHORT).show();
 
-                }
+                            Log.d("startActivity", "Started Activity");
+                            startActivity(new Intent(SignInActivity.this, FragmentsActivity.class));
 
-            }
-        };
+                            finish();
+
+                        } else {
+                            // If sign in fails, display a message to the user.
+                            Log.w(TAG, "signInWithEmail:failure", task.getException());
+                            Toast.makeText(SignInActivity.this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
+
+                            hideProgressDialog();
 
 
-        mLoginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                        }
+                    }
+                });
+        // [END sign_in_with_email]
+    }
 
-                startSignIn();
+    private boolean validateForm() {
+        boolean valid = true;
 
-            }
-        });
+        String email = mEmailField.getText().toString();
+        if (TextUtils.isEmpty(email)) {
+            mEmailField.setError("Required.");
+            valid = false;
+        } else {
+            mEmailField.setError(null);
+        }
+
+        String password = mPasswordField.getText().toString();
+        if (TextUtils.isEmpty(password)) {
+            mPasswordField.setError("Required.");
+            valid = false;
+        } else {
+            mPasswordField.setError(null);
+        }
+
+        return valid;
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
-
-        mAuth.addAuthStateListener(mAuthListener);
-    }
-
-    private void startSignIn() {
-
-        String email = mEmailField.getText().toString();
-        String password = mPasswordField.getText().toString();
-
-        if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
-
-            Toast.makeText(SignInActivity.this, "Fields are Empty", Toast.LENGTH_LONG).show();
-
-
-        } else {
-
-            mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                @Override
-                public void onComplete(@NonNull Task<AuthResult> task) {
-
-                    if (!task.isSuccessful()) {
-
-                        Toast.makeText(SignInActivity.this, "SignIn Problem", Toast.LENGTH_LONG).show();
-                    }
-
-                }
-            });
+    public void onClick(View v) {
+        int i = v.getId();
+        if (i == R.id.loginBtn) {
+            signIn(mEmailField.getText().toString(), mPasswordField.getText().toString());
         }
-
-
     }
 }
