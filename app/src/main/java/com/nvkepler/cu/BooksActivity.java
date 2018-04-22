@@ -15,16 +15,16 @@ public class BooksActivity extends FragmentsActivity {
 
         // Create a list of books
         ArrayList<Book> books = new ArrayList<>();
-        books.add(new Book("Book 1", "abc", R.mipmap.book));
-        books.add(new Book("Book 2", "xyz", R.mipmap.book));
-        books.add(new Book("Book 3", "abc", R.mipmap.book));
-        books.add(new Book("Book 4", "xyz", R.mipmap.book));
-        books.add(new Book("Book 5", "abc", R.mipmap.book));
-        books.add(new Book("Book 6", "xyz", R.mipmap.book));
-        books.add(new Book("Book 7", "abc", R.mipmap.book));
-        books.add(new Book("Book 8", "xyz", R.mipmap.book));
-        books.add(new Book("Book 9", "abc", R.mipmap.book));
-        books.add(new Book("Book 10", "xyz", R.mipmap.book));
+        books.add(new Book("Book 1", "abc", R.mipmap.bookblue));
+        books.add(new Book("Book 2", "xyz", R.mipmap.bookred));
+        books.add(new Book("Book 3", "abc", R.mipmap.bookblue));
+        books.add(new Book("Book 4", "xyz", R.mipmap.bookred));
+        books.add(new Book("Book 5", "abc", R.mipmap.bookblue));
+        books.add(new Book("Book 6", "xyz", R.mipmap.bookred));
+        books.add(new Book("Book 7", "abc", R.mipmap.bookblue));
+        books.add(new Book("Book 8", "xyz", R.mipmap.bookred));
+        books.add(new Book("Book 9", "abc", R.mipmap.bookblue));
+        books.add(new Book("Book 10", "xyz", R.mipmap.bookred));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
