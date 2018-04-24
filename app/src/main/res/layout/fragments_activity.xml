@@ -1,87 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/bgblack">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:background="@color/bgblack">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:padding="5dp"
-            android:background="@drawable/bottonbg">
+            android:background="@color/bgblack"
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/issue"/>
-
-            <TextView
-                android:id="@+id/ir"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Book Issue"
-                android:textSize="25sp"
-                android:padding="15dp"
-                android:textColor="@color/white"
-                android:fontFamily="monospace"
-                android:textStyle="bold"
-                android:layout_gravity="center"/>
+                android:layout_margin="20dp"
+                android:background="@drawable/bottonbg"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/I_R"
+                    android:src="@drawable/issue" />
+
+                <TextView
+                    android:id="@+id/ir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="monospace"
+                    android:padding="15dp"
+                    android:text="@string/I_R"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/bottonbg"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/BooksInfo"
+                    android:src="@drawable/book" />
+
+                <TextView
+                    android:id="@+id/books"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="monospace"
+                    android:padding="15dp"
+                    android:text="@string/BooksInfo"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/bottonbg"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/StuInfo"
+                    android:src="@drawable/student" />
+
+                <TextView
+                    android:id="@+id/student"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="monospace"
+                    android:padding="15dp"
+                    android:text="@string/StuInfo"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:padding="5dp"
-            android:background="@drawable/bottonbg">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/book"/>
-
-        <TextView
-            android:id="@+id/books"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Book Info"
-            android:padding="15dp"
-            android:textSize="25sp"
-            android:textColor="@color/white"
-            android:fontFamily="monospace"
-            android:textStyle="bold"
-            android:layout_gravity="center"/></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:padding="5dp"
-            android:background="@drawable/bottonbg">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/student"/>
-
-        <TextView
-            android:id="@+id/student"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Student Info"
-            android:padding="15dp"
-            android:textSize="25sp"
-            android:textColor="@color/white"
-            android:fontFamily="monospace"
-            android:textStyle="bold"
-            android:layout_gravity="center"/></LinearLayout>
-    </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
+</RelativeLayout>

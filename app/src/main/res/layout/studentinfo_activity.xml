@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/bgblack">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/bgblack">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/bgblack"
         android:orientation="vertical">
 
@@ -13,8 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Student Information"
-            android:textSize="25dp"
+            android:text="@string/Student_Information"
+            android:textSize="25sp"
             android:fontFamily="sans-serif"
             android:textColor="@color/white"
             android:textAlignment="center"/>
@@ -35,13 +42,14 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/contact"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:contentDescription="@string/Student_Information" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Name"
-            android:textSize="15dp"
+            android:text="@string/Name"
+            android:textSize="15sp"
             android:padding="13dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/greyrect"
@@ -52,8 +60,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RollNo"
-            android:textSize="15dp"
+            android:text="@string/RollNo"
+            android:textSize="15sp"
             android:padding="13dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/greyrect"
@@ -64,8 +72,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email"
-            android:textSize="15dp"
+            android:text="@string/Email"
+            android:textSize="15sp"
             android:padding="13dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/greyrect"
@@ -76,8 +84,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DOB"
-            android:textSize="15dp"
+            android:text="@string/DOB"
+            android:textSize="15sp"
             android:padding="13dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/greyrect"
@@ -88,8 +96,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contact Number"
-            android:textSize="13dp"
+            android:text="@string/Contact_Number"
+            android:textSize="15sp"
             android:padding="15dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/greyrect"
@@ -99,3 +107,4 @@
     </LinearLayout>
     </LinearLayout>
 </ScrollView>
+</RelativeLayout>

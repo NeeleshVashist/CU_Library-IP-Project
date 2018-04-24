@@ -33,6 +33,12 @@
     <string name="name">Name</string>
     <string name="BooksIss">Books Issued</string>
     <string name="StuID">Student ID</string>
+    <string name="Student_Information">Student Information</string>
+    <string name="Name">Name</string>
+    <string name="RollNo">RollNo</string>
+    <string name="Email">Email</string>
+    <string name="DOB">DOB</string>
+    <string name="Contact_Number">Contact Number</string>
 
     <!--Content Description-->
     <string name="description">Chitkara Logo</string>
