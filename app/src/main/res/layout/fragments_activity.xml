@@ -23,6 +23,7 @@
             android:src="@drawable/issue"/>
 
             <TextView
+                android:id="@+id/ir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Book Issue"
@@ -47,6 +48,7 @@
             android:src="@drawable/book"/>
 
         <TextView
+            android:id="@+id/books"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Book Info"
@@ -70,6 +72,7 @@
             android:src="@drawable/student"/>
 
         <TextView
+            android:id="@+id/student"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Student Info"
