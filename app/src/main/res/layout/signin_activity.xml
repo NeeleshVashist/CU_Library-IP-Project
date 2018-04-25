@@ -85,7 +85,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/bottonbg"
-                        android:text="@string/LogIn"
+                        android:text="@string/log_in"
                         android:textColor="@color/white"
                         android:textSize="16sp"
                         android:textStyle="bold" />

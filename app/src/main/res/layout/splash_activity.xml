@@ -10,15 +10,15 @@
         android:layout_width="250dp"
         android:layout_height="200dp"
         android:contentDescription="@string/description"
-        android:src="@drawable/cu_logo" />
+        android:src="@drawable/cu_think" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:background="@color/buttonred"
+        android:layout_height="130dp"
+        android:paddingTop="35dp"
+        android:paddingLeft="25dp"
+        android:background="@drawable/arrow"
         android:fontFamily="sans-serif-smallcaps"
-        android:padding="8dp"
         android:text="@string/e_library"
         android:textAlignment="center"
         android:textColor="@color/white"
