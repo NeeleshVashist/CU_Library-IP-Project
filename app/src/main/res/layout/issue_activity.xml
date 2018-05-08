@@ -81,6 +81,7 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:id="@+id/code"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
@@ -96,6 +97,7 @@
                         android:layout_marginTop="25dp"
                         android:background="@drawable/bottonbg"
                         android:text="@string/submit"
+                        android:onClick="submit"
                         android:textColor="@color/white" />
 
                 </LinearLayout>
