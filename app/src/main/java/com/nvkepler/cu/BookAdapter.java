@@ -41,6 +41,10 @@ public class BookAdapter extends ArrayAdapter<Book> {
 
         authorName.setText(currentBook.getAuthorName());
 
+        TextView bookCode = listItemView.findViewById(R.id.book_code);
+
+        bookCode.setText(currentBook.getBookCode());
+
 
         // Find the ImageView in the list_item.xml layout with the ID image.
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);

@@ -15,21 +15,25 @@ public class Book {
      */
     private String mauthorName;
 
+    private String mbookCode;
+
     /**
      * Create a new Book object.
      *
      * @param bookName   is the Name of the Book
      * @param authorName is the Author Name
      */
-    Book(String bookName, String authorName) {
+    Book(String bookName, String authorName, String bookCode) {
         mbookName = bookName;
         mauthorName = authorName;
+        mbookCode = bookCode;
     }
 
-    public Book(String bookName, String authorName, int imageResourceId) {
+    public Book(String bookName, String authorName, int imageResourceId, String bookCode) {
         mbookName = bookName;
         mauthorName = authorName;
         mImageResourceId = imageResourceId;
+        mbookCode = bookCode;
     }
 
 
@@ -45,6 +49,10 @@ public class Book {
      */
     public String getAuthorName() {
         return mauthorName;
+    }
+
+    public String getBookCode() {
+        return mbookCode;
     }
 
     public int getImageResourceId() {

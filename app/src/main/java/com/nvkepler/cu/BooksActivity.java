@@ -15,17 +15,17 @@ public class BooksActivity extends FragmentsActivity {
 
         // Create a list of books
         ArrayList<Book> books = new ArrayList<>();
-        books.add(new Book("Book Name", "Author Name", R.drawable.bookred));
-        books.add(new Book("Book 1", "abc", R.drawable.bookblue));
-        books.add(new Book("Book 2", "xyz", R.drawable.bookred));
-        books.add(new Book("Book 3", "abc", R.drawable.bookblue));
-        books.add(new Book("Book 4", "xyz", R.drawable.bookred));
-        books.add(new Book("Book 5", "abc", R.drawable.bookblue));
-        books.add(new Book("Book 6", "xyz", R.drawable.bookred));
-        books.add(new Book("Book 7", "abc", R.drawable.bookblue));
-        books.add(new Book("Book 8", "xyz", R.drawable.bookred));
-        books.add(new Book("Book 9", "abc", R.drawable.bookblue));
-        books.add(new Book("Book 10", "xyz", R.drawable.bookred));
+        books.add(new Book("Book Name", "Author Name", R.drawable.bookred, "Book BarCode"));
+        books.add(new Book("Book 1", "abc", R.drawable.bookblue, "0001"));
+        books.add(new Book("Book 2", "xyz", R.drawable.bookred, "0002"));
+        books.add(new Book("Book 3", "abc", R.drawable.bookblue, "0003"));
+        books.add(new Book("Book 4", "xyz", R.drawable.bookred, "0004"));
+        books.add(new Book("Book 5", "abc", R.drawable.bookblue, "0005"));
+        books.add(new Book("Book 6", "xyz", R.drawable.bookred, "0006"));
+        books.add(new Book("Book 7", "abc", R.drawable.bookblue, "0007"));
+        books.add(new Book("Book 8", "xyz", R.drawable.bookred, "0008"));
+        books.add(new Book("Book 9", "abc", R.drawable.bookblue, "0009"));
+        books.add(new Book("Book 10", "xyz", R.drawable.bookred, "0010"));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
