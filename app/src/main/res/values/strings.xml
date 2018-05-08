@@ -53,6 +53,8 @@
     <string name="book_code2">0011</string>
     <string name="book_code3">0111</string>
     <string name="book_code4">1111</string>
+    <string name="book_name">Book Name</string>
+    <string name="book_code">BarCode</string>
 
 
     <!--Content Description-->

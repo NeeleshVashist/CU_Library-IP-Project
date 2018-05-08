@@ -15,7 +15,7 @@ public class BooksActivity extends FragmentsActivity {
 
         // Create a list of books
         ArrayList<Book> books = new ArrayList<>();
-        books.add(new Book("Book Name", "Author Name", R.drawable.bookred, "Book BarCode"));
+        books.add(new Book("Book Name", "Author Name", R.drawable.bookred, "BarCode"));
         books.add(new Book("Book 1", "abc", R.drawable.bookblue, "0001"));
         books.add(new Book("Book 2", "xyz", R.drawable.bookred, "0002"));
         books.add(new Book("Book 3", "abc", R.drawable.bookblue, "0003"));
