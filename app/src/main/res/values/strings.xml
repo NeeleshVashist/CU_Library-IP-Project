@@ -35,10 +35,24 @@
     <string name="StuID">Student ID</string>
     <string name="Student_Information">Student Information</string>
     <string name="Name">Name</string>
+    <string name="Sample_name">xyz</string>
     <string name="RollNo">RollNo</string>
+    <string name="Sample_RollNo">12345678</string>
     <string name="Email">Email</string>
+    <string name="Sample_Email">xyz@cu.com</string>
     <string name="DOB">DOB</string>
     <string name="Contact_Number">Contact Number</string>
+    <string name="Barcode">BarCode</string>
+    <string name="book_issued">Books Issued</string>
+    <string name="book1">Book 1</string>
+    <string name="book2">Book 2</string>
+    <string name="book3">Book 3</string>
+    <string name="book4">Book 4</string>
+    <string name="book_code1">0001</string>
+    <string name="book_code2">0011</string>
+    <string name="book_code3">0111</string>
+    <string name="book_code4">1111</string>
+
 
     <!--Content Description-->
     <string name="description">Chitkara Logo</string>
