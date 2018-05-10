@@ -62,4 +62,6 @@
 
     <string name="loading">Loading</string>
     <string name="log_in">Log In</string>
+    <string name="return_portal">Return Portal</string>
+    <string name="to_return">To Return</string>
 </resources>

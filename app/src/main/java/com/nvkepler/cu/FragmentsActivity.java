@@ -36,6 +36,28 @@ public class FragmentsActivity extends AppCompatActivity {
 
         //*******************************************************************************************
 
+        //*******************************************************************************************
+
+        //Connecting IssueActivity with FragmentsActivity
+
+        // Find the View that shows the Return Books category
+        TextView ri = findViewById(R.id.returnb);
+
+        // Set a click listener on that View
+        ri.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the IR category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link IssueActivity}
+                Intent ReturnIntent = new Intent(FragmentsActivity.this, ReturnPortal.class);
+
+                // Start the new activity
+                startActivity(ReturnIntent);
+            }
+        });
+
+        //*******************************************************************************************
+
         //Connecting BooksActivity with FragmentsActivity
 
         // Find the View that shows the Books category

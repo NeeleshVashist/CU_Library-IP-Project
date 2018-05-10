@@ -33,18 +33,37 @@ public class StudentInfoActivity extends FragmentsActivity {
                    String name=(String)dataSnapshot.child(user.getUid()).child("Name").getValue();
                    String roll=(String)dataSnapshot.child(user.getUid()).child("RollNo").getValue();
                    String email=(String)dataSnapshot.child(user.getUid()).child("Email").getValue();
-                   String book1=(String)dataSnapshot.child(user.getUid()).child("Book1").getValue();
-                   String book2=(String)dataSnapshot.child(user.getUid()).child("Book2").getValue();
-                   String book3=(String)dataSnapshot.child(user.getUid()).child("Book3").getValue();
-                   String book4=(String)dataSnapshot.child(user.getUid()).child("Book4").getValue();
+                   if(dataSnapshot.child(user.getUid()).child("Book4").exists()) {
+                       String book4=(String)dataSnapshot.child(user.getUid()).child("Book4").getValue();
+                       book44.setText(book4);
+                   }else{
+                       book44.setText("-");
+                   }
+
+                if(dataSnapshot.child(user.getUid()).child("Book3").exists()) {
+                    String book3=(String)dataSnapshot.child(user.getUid()).child("Book3").getValue();
+                    book33.setText(book3);
+                }else{
+                    book33.setText("-");
+                }
+
+                if(dataSnapshot.child(user.getUid()).child("Book2").exists()) {
+                    String book2=(String)dataSnapshot.child(user.getUid()).child("Book2").getValue();
+                    book22.setText(book2);
+                }else{
+                    book22.setText("-");
+                }
+
+                if(dataSnapshot.child(user.getUid()).child("Book1").exists()) {
+                    String book1=(String)dataSnapshot.child(user.getUid()).child("Book1").getValue();
+                    book11.setText(book1);
+                }else{
+                    book11.setText("-");
+                }
 
                 name1.setText(name);
                 roll1.setText(roll);
                 email1.setText(email);
-                book11.setText(book1);
-                book22.setText(book2);
-                book33.setText(book3);
-                book44.setText(book4);
 
             }
 

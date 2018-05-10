@@ -19,24 +19,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".SignInActivity" />
-
         <activity android:name=".BaseActivity" />
-
         <activity android:name=".FragmentsActivity" />
-
         <activity
             android:name=".IssueActivity"
             android:label="@string/I_R" />
-
         <activity
             android:name=".BooksActivity"
             android:label="@string/BooksInfo" />
-
         <activity
             android:name=".StudentInfoActivity"
             android:label="@string/StuInfo" />
+        <activity android:name=".ReturnPortal"
+            android:label="Return Portal" />
     </application>
 
 </manifest>

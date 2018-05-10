@@ -27,17 +27,17 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:contentDescription="@string/I_R"
-                    android:src="@drawable/issue" />
+                    android:contentDescription="@string/StuInfo"
+                    android:src="@drawable/student" />
 
                 <TextView
-                    android:id="@+id/ir"
+                    android:id="@+id/student"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="monospace"
                     android:padding="15dp"
-                    android:text="@string/I_R"
+                    android:text="@string/StuInfo"
                     android:textColor="@color/white"
                     android:textSize="25sp"
                     android:textStyle="bold" />
@@ -79,21 +79,48 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:contentDescription="@string/StuInfo"
-                    android:src="@drawable/student" />
+                    android:contentDescription="@string/I_R"
+                    android:src="@drawable/returnp" />
 
                 <TextView
-                    android:id="@+id/student"
+                    android:id="@+id/ir"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="monospace"
                     android:padding="15dp"
-                    android:text="@string/StuInfo"
+                    android:text="@string/I_R"
                     android:textColor="@color/white"
                     android:textSize="25sp"
                     android:textStyle="bold" />
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/bottonbg"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/I_R"
+                    android:src="@drawable/issue" />
+
+                <TextView
+                    android:id="@+id/returnb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="monospace"
+                    android:padding="15dp"
+                    android:text="@string/return_portal"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>
