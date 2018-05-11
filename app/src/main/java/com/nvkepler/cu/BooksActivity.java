@@ -16,16 +16,16 @@ public class BooksActivity extends FragmentsActivity {
         // Create a list of books
         ArrayList<Book> books = new ArrayList<>();
         books.add(new Book("Book Name", "Author Name", R.drawable.bookred, "BarCode"));
-        books.add(new Book("Book 1", "abc", R.drawable.bookblue, "0001"));
-        books.add(new Book("Book 2", "xyz", R.drawable.bookred, "0002"));
-        books.add(new Book("Book 3", "abc", R.drawable.bookblue, "0003"));
-        books.add(new Book("Book 4", "xyz", R.drawable.bookred, "0004"));
-        books.add(new Book("Book 5", "abc", R.drawable.bookblue, "0005"));
-        books.add(new Book("Book 6", "xyz", R.drawable.bookred, "0006"));
-        books.add(new Book("Book 7", "abc", R.drawable.bookblue, "0007"));
-        books.add(new Book("Book 8", "xyz", R.drawable.bookred, "0008"));
-        books.add(new Book("Book 9", "abc", R.drawable.bookblue, "0009"));
-        books.add(new Book("Book 10", "xyz", R.drawable.bookred, "0010"));
+        books.add(new Book("Engineering Physics", "Dr. H. K. Malik", R.drawable.bookblue, "1101"));
+        books.add(new Book("Engineering Chemistry", "Mr. Rakesh Chauhan", R.drawable.bookred, "1102"));
+        books.add(new Book("Engineering Mathematics", "Prof. V. K.", R.drawable.bookblue, "1103"));
+        books.add(new Book("Electrical Engineering", "Prof. Shiv Jha", R.drawable.bookred, "1104"));
+        books.add(new Book("Chemical Equations", "Dr. Charu Kumar", R.drawable.bookblue, "1105"));
+        books.add(new Book("Digital Electronics", "Preeti Sabarwal", R.drawable.bookred, "1106"));
+        books.add(new Book("Numerical Methods", "Prof. G. S. Jhamb", R.drawable.bookblue, "1107"));
+        books.add(new Book("Discrete Maths", "Prof. R. D. Sharma", R.drawable.bookred, "1108"));
+        books.add(new Book("Trapezoidal Equations", "Dr. H. C. Verma", R.drawable.bookblue, "1109"));
+        books.add(new Book("Start with Android", "S Chand", R.drawable.bookred, "1110"));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
